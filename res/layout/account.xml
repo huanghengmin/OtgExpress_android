@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#FFFFFF"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/express_text"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="10dip"
+            android:gravity="bottom"
+            android:text="快递员:"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+
+    <EditText
+            android:id="@+id/express"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@id/express_text"
+            android:layout_marginLeft="12dip"
+            android:text="张三"
+            android:textColor="#000000"
+            android:layout_marginRight="10dip"/>
+
+    <TextView
+            android:id="@+id/express_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_below="@id/express"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="10dip"
+            android:gravity="bottom"
+            android:text="快递员编号:"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+
+    <EditText
+            android:id="@+id/express_number"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@id/express_number_text"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="10dip"
+            android:text="ABCD007"
+            android:textColor="#000000"
+            android:maxLines="200"
+            android:scrollHorizontally="true"/>
+
+    <TextView
+            android:id="@+id/express_company_text"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_below="@id/express_number"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="10dip"
+            android:gravity="bottom"
+            android:text="快递公司:"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+
+    <EditText
+            android:id="@+id/express_company"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@id/express_company_text"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="10dip"
+            android:maxLines="200"
+            android:textColor="#000000"
+            android:text="申通快递"
+            android:scrollHorizontally="true"/>
+
+    <Button
+            android:id="@+id/express_save"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@id/express_company"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="保存信息"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+</LinearLayout>
+

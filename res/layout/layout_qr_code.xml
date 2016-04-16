@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@drawable/bg_home_user_login"
+              tools:context="${relativePackage}.${activityClass}">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/t_3"
+                />
+        <TextView
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_gravity="center_vertical"
+                android:textSize="20dip"
+                android:text="运单号:"
+                />
+        <TextView android:id="@+id/qr_code"
+                  android:layout_alignParentRight="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="#000"
+                  android:layout_gravity="center_vertical"
+                  android:textSize="20dip"
+                />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/t_3"
+                />
+        <TextView
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_gravity="center_vertical"
+                android:textSize="20dip"
+                android:text="联系方式:"
+                />
+        <EditText android:id="@+id/phone"
+                  android:layout_alignParentRight="true"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="#000"
+                  android:layout_gravity="center_vertical"
+                  android:textSize="20dip"
+                />
+    </LinearLayout>
+
+    <!--  <Button
+          android:id="@+id/read_camera"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="识别条形码(使用摄像头)" />-->
+
+    <!--    <TextView
+                  android:ellipsize="end"
+                  android:singleLine="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="#000"
+                  android:layout_gravity="center_vertical"
+                  android:textSize="20dip"
+                  android:text="快递单号" />
+                />
+        <TextView android:id="@+id/layout_qr_code"
+                  android:layout_alignParentRight="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="#000"
+                  android:layout_gravity="center_vertical"
+                  android:textSize="20dip"
+                />-->
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/margins_30"
+            android:orientation="vertical">
+        <ImageButton android:id="@+id/success"
+                     android:src="@drawable/success"
+                     android:layout_gravity="center"
+                     android:background="@color/head"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"/>
+    </LinearLayout>
+
+</LinearLayout>

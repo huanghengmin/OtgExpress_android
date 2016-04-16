@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+ 
+    <item
+        android:id="@+id/action_menu_admin"
+        android:icon="@drawable/tab_settings_normal"
+        android:title="@string/admin_server"/>
+
+    <item
+            android:id="@+id/action_menu_otg"
+            android:icon="@drawable/tab_settings_normal"
+            android:title="@string/otg_server"/>
+
+</menu>

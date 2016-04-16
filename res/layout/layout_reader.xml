@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/bg_home_user_login"
+              android:gravity="center|center_horizontal|center_vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageButton android:layout_width="wrap_content"
+                 android:src="@drawable/otg"
+                 android:background="@color/head"
+                 android:id="@+id/otgButton"
+                 android:layout_height="wrap_content"/>
+
+
+    <ImageButton android:layout_width="wrap_content"
+                 android:src="@drawable/ocr"
+                 android:layout_marginTop="@dimen/margins_70"
+                 android:id="@+id/ocrButton"
+                 android:background="@color/head"
+                 android:layout_height="wrap_content"/>
+</LinearLayout>

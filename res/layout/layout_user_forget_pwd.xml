@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_home_user_login"
+              android:layout_width="fill_parent" android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header"/>
+
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+        <EditText android:id="@+id/phone" android:background="@drawable/color_type_content_one"
+                  android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/margins_10" android:layout_marginTop="@dimen/margins_20"
+                  android:layout_marginRight="@dimen/margins_10" android:minHeight="@dimen/item_height"
+                  android:hint="@string/user_register_phone" android:singleLine="true" android:inputType="phone"
+                  android:imeOptions="actionNext"/>
+
+        <EditText android:id="@+id/oldPsw" android:background="@drawable/color_type_content_one"
+                  android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/margins_10" android:layout_marginTop="@dimen/margins_20"
+                  android:layout_marginRight="@dimen/margins_10" android:minHeight="@dimen/item_height"
+                  android:hint="@string/user_old_password" android:singleLine="true" android:inputType="textPassword"
+                  android:imeOptions="actionNext"/>
+
+        <EditText android:id="@+id/psw" android:background="@drawable/color_type_content_one"
+                  android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/margins_10" android:layout_marginTop="@dimen/margins_20"
+                  android:layout_marginRight="@dimen/margins_10" android:minHeight="@dimen/item_height"
+                  android:hint="@string/user_new_pwd" android:singleLine="true" android:inputType="textPassword"
+                  android:imeOptions="actionNext"/>
+
+        <EditText android:id="@+id/psw_next" android:background="@drawable/color_type_content_one"
+                  android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:layout_margin="@dimen/margins_10" android:minHeight="@dimen/item_height"
+                  android:hint="@string/user_confirm_pwd" android:singleLine="true"
+                  android:inputType="textPassword"
+                  android:imeOptions="actionDone"/>
+
+
+        <Button android:enabled="false" android:textSize="@dimen/title_text_size"
+                android:textColor="@android:color/white"
+                android:id="@+id/submit"
+                android:background="@drawable/btn_button_yellow_selector"
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margins_10" android:minHeight="@dimen/botton_height"
+                android:text="@string/user_update_submit"/>
+    </LinearLayout>
+</LinearLayout>

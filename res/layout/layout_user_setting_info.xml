@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+              android:background="@drawable/bg_home_user_login"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header"/>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+                      android:layout_height="wrap_content">
+
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/adapter_type_content_top"
+                          android:layout_width="fill_parent" android:layout_height="wrap_content"
+                          android:layout_marginLeft="@dimen/margins_10" android:layout_marginTop="@dimen/margins_10"
+                          android:layout_marginRight="@dimen/margins_10">
+                <TextView android:textColor="@color/red" android:gravity="center_vertical"
+                          android:layout_width="wrap_content" android:layout_height="@dimen/item_height"
+                          android:layout_marginLeft="@dimen/margins_10" android:text="@string/user_setting_must"/>
+                <TextView android:textColor="@color/text_38" android:gravity="center_vertical"
+                          android:layout_width="wrap_content" android:layout_height="@dimen/item_height"
+                          android:text="@string/user_setting_phone"/>
+                <EditText android:textSize="@dimen/large_text_size" android:textColor="@color/black"
+                          android:gravity="center_vertical" android:id="@+id/phone" android:background="@null"
+                          android:layout_width="fill_parent" android:layout_height="fill_parent"
+                          android:enabled="false"
+                          android:layout_marginRight="@dimen/margins_10" android:minHeight="@dimen/item_height"
+                          android:singleLine="true" android:inputType="phone" android:imeOptions="actionNext"/>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/adapter_type_content_centre"
+                          android:layout_width="fill_parent" android:layout_height="wrap_content"
+                          android:layout_marginLeft="@dimen/margins_10" android:layout_marginRight="@dimen/margins_10">
+                <TextView android:textColor="@color/red" android:gravity="center_vertical"
+                          android:visibility="invisible"
+                          android:layout_width="wrap_content" android:layout_height="@dimen/item_height"
+                          android:layout_marginLeft="@dimen/margins_10" android:text="@string/user_setting_must"/>
+                <TextView android:textColor="@color/text_38" android:gravity="center_vertical"
+                          android:layout_width="wrap_content" android:layout_height="@dimen/item_height"
+                          android:text="@string/user_setting_idcard"/>
+                <EditText android:textSize="@dimen/large_text_size" android:textColor="@color/black"
+                          android:gravity="center_vertical" android:id="@+id/id_card" android:background="@null"
+                          android:layout_width="fill_parent" android:layout_height="fill_parent"
+                          android:layout_marginRight="@dimen/margins_10" android:minHeight="@dimen/item_height"
+                          android:inputType="text" android:imeOptions="actionNext"/>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/adapter_type_content_centre"
+                          android:layout_width="fill_parent" android:layout_height="wrap_content"
+                          android:layout_marginLeft="@dimen/margins_10" android:layout_marginRight="@dimen/margins_10">
+                <TextView android:textColor="@color/red" android:gravity="center_vertical"
+                          android:visibility="invisible"
+                          android:layout_width="wrap_content" android:layout_height="@dimen/item_height"
+                          android:layout_marginLeft="@dimen/margins_10" android:text="@string/user_setting_must"/>
+                <TextView android:textColor="@color/text_38" android:gravity="center_vertical"
+                          android:layout_width="wrap_content" android:layout_height="@dimen/item_height"
+                          android:text="@string/user_setting_express_name"/>
+                <EditText android:textSize="@dimen/large_text_size" android:textColor="@color/black"
+                          android:gravity="center_vertical" android:id="@+id/express_name" android:background="@null"
+                          android:layout_width="fill_parent" android:layout_height="fill_parent"
+                          android:layout_marginRight="@dimen/margins_10" android:minHeight="@dimen/item_height"
+                          android:inputType="text" android:imeOptions="actionNext"/>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/adapter_type_content_centre"
+                          android:layout_width="fill_parent" android:layout_height="wrap_content"
+                          android:layout_marginLeft="@dimen/margins_10" android:layout_marginRight="@dimen/margins_10">
+                <TextView android:textColor="@color/red" android:gravity="center_vertical"
+                          android:visibility="invisible" android:layout_width="wrap_content"
+                          android:layout_height="@dimen/item_height" android:layout_marginLeft="@dimen/margins_10"
+                          android:text="@string/user_setting_must"/>
+                <TextView android:textColor="@color/text_38" android:gravity="center_vertical"
+                          android:layout_width="wrap_content" android:layout_height="@dimen/item_height"
+                          android:text="@string/user_setting_express_number"/>
+                <EditText android:textSize="@dimen/large_text_size" android:textColor="@color/black"
+                          android:gravity="center_vertical" android:id="@+id/express_number" android:background="@null"
+                          android:layout_width="fill_parent" android:layout_height="fill_parent"
+                          android:layout_marginRight="@dimen/margins_10" android:minHeight="@dimen/item_height"
+                          android:inputType="text" android:imeOptions="actionNext"/>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/adapter_type_content_centre"
+                          android:layout_width="fill_parent" android:layout_height="wrap_content"
+                          android:layout_marginLeft="@dimen/margins_10" android:layout_marginRight="@dimen/margins_10">
+                <TextView android:textColor="@color/red" android:gravity="center_vertical"
+                          android:visibility="invisible" android:layout_width="wrap_content"
+                          android:layout_height="@dimen/item_height" android:layout_marginLeft="@dimen/margins_10"
+                          android:text="@string/user_setting_must"/>
+                <TextView android:textColor="@color/text_38" android:gravity="center_vertical"
+                          android:layout_width="wrap_content" android:layout_height="@dimen/item_height"
+                          android:text="@string/user_setting_express_company"/>
+                <EditText android:textSize="@dimen/large_text_size" android:textColor="@color/black"
+                          android:enabled="false"
+                          android:gravity="center_vertical" android:id="@+id/express_company" android:background="@null"
+                          android:layout_width="fill_parent" android:layout_height="fill_parent"
+                          android:layout_marginRight="@dimen/margins_10" android:minHeight="@dimen/item_height"
+                          android:inputType="text" android:imeOptions="actionNext"/>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/adapter_type_content_centre"
+                          android:layout_width="fill_parent" android:layout_height="wrap_content"
+                          android:layout_marginLeft="@dimen/margins_10" android:layout_marginRight="@dimen/margins_10">
+                <TextView android:textColor="@color/red" android:gravity="center_vertical"
+                          android:visibility="invisible" android:layout_width="wrap_content"
+                          android:layout_height="@dimen/item_height" android:layout_marginLeft="@dimen/margins_10"
+                          android:text="@string/user_setting_must"/>
+                <TextView android:textColor="@color/text_38" android:gravity="center_vertical"
+                          android:layout_width="wrap_content" android:layout_height="@dimen/item_height"
+                          android:text="@string/user_setting_register_time"/>
+                <EditText android:textSize="@dimen/large_text_size" android:textColor="@color/black"
+                          android:gravity="center_vertical" android:id="@+id/register_time" android:background="@null"
+                          android:layout_width="fill_parent" android:layout_height="fill_parent"
+                          android:enabled="false"
+                          android:layout_marginRight="@dimen/margins_10" android:minHeight="@dimen/item_height"
+                          android:inputType="text" android:imeOptions="actionNext"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/adapter_type_content_bottom"
+                          android:layout_width="fill_parent" android:layout_height="wrap_content"
+                          android:layout_marginLeft="@dimen/margins_10" android:layout_marginRight="@dimen/margins_10">
+                <TextView android:textColor="@color/red" android:gravity="center_vertical"
+                          android:visibility="invisible" android:layout_width="wrap_content"
+                          android:layout_height="@dimen/item_height" android:layout_marginLeft="@dimen/margins_10"
+                          android:text="@string/user_setting_must"/>
+                <TextView android:textColor="@color/text_38" android:gravity="center_vertical"
+                          android:layout_width="wrap_content" android:layout_height="@dimen/item_height"
+                          android:text="@string/user_setting_modify_time"/>
+                <EditText android:textSize="@dimen/large_text_size" android:textColor="@color/black"
+                          android:gravity="center_vertical" android:id="@+id/modify_time" android:background="@null"
+                          android:layout_width="fill_parent" android:layout_height="fill_parent"
+                          android:enabled="false"
+                          android:layout_marginRight="@dimen/margins_10" android:minHeight="@dimen/item_height"
+                          android:inputType="text" android:imeOptions="actionNext"/>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal"
+                          android:layout_width="fill_parent" android:layout_height="wrap_content"
+                          android:layout_marginLeft="@dimen/margins_10" android:layout_marginRight="@dimen/margins_10"
+                          android:layout_marginBottom="@dimen/margins_10">
+
+                <Button android:textSize="@dimen/small_text_size" android:textColor="@color/white"
+                        android:id="@+id/user_info_submit_button" android:background="@drawable/patient_submit_bg"
+                        android:padding="@dimen/margins_10" android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" android:layout_marginTop="@dimen/margins_10"
+                        android:text="@string/user_submit"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

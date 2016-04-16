@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+        <ImageView android:id="@+id/fragment_my_image_view" android:layout_width="fill_parent"
+                   android:layout_height="wrap_content" android:contentDescription="@null"/>
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/margins_10"
+                      android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+                          android:layout_height="wrap_content">
+
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+                              android:layout_height="wrap_content" android:layout_marginTop="@dimen/margins_10">
+                    <RelativeLayout android:id="@+id/fragment_my_personal_layout"
+                                    android:background="@drawable/selector_corner_frame_top"
+                                    android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/fragment_my_personal_left_image" android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margins_5"
+                                   android:layout_marginRight="@dimen/margins_5"
+                                   android:src="@drawable/fragment_my_personal" android:layout_alignParentLeft="true"
+                                   android:layout_centerVertical="true" android:contentDescription="@null"/>
+                        <ImageView android:id="@+id/fragment_my_personal_right_image" android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginRight="@dimen/margins_5" android:src="@drawable/right_arrow"
+                                   android:layout_alignParentRight="true" android:layout_centerVertical="true"
+                                   android:contentDescription="@null"/>
+                        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/newui_darktext"
+                                  android:paddingTop="@dimen/margins_10"
+                                  android:paddingBottom="@dimen/margins_10" android:layout_width="fill_parent"
+                                  android:layout_height="wrap_content" android:text="@string/user_personal_info"
+                                  android:layout_toLeftOf="@id/fragment_my_personal_right_image"
+                                  android:layout_toRightOf="@id/fragment_my_personal_left_image"
+                                  android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/fragment_my_password_layout"
+                                    android:background="@drawable/selector_corner_frame_center"
+                                    android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/fragment_my_password_left_image" android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margins_5"
+                                   android:layout_marginRight="@dimen/margins_5"
+                                   android:src="@drawable/fragment_my_password" android:layout_alignParentLeft="true"
+                                   android:layout_centerVertical="true" android:contentDescription="@null"/>
+                        <ImageView android:id="@+id/fragment_my_password_right_image" android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginRight="@dimen/margins_5" android:src="@drawable/right_arrow"
+                                   android:layout_alignParentRight="true" android:layout_centerVertical="true"
+                                   android:contentDescription="@null"/>
+                        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/newui_darktext"
+                                  android:paddingTop="@dimen/margins_10"
+                                  android:paddingBottom="@dimen/margins_10" android:layout_width="fill_parent"
+                                  android:layout_height="wrap_content" android:text="@string/user_modify_password"
+                                  android:layout_toLeftOf="@id/fragment_my_password_right_image"
+                                  android:layout_toRightOf="@id/fragment_my_password_left_image"
+                                  android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout android:id="@+id/fragment_my_version_layout"
+                                    android:background="@drawable/selector_corner_frame_center"
+                                    android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+                        <ImageView android:id="@+id/fragment_my_version_left_image" android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margins_5"
+                                   android:layout_marginRight="@dimen/margins_5"
+                                   android:src="@drawable/fragment_my_personal" android:layout_alignParentLeft="true"
+                                   android:layout_centerVertical="true" android:contentDescription="@null"/>
+
+                        <ImageView android:id="@+id/fragment_my_version_right_image" android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginRight="@dimen/margins_5" android:src="@drawable/right_arrow"
+                                   android:layout_alignParentRight="true" android:layout_centerVertical="true"
+                                   android:contentDescription="@null"/>
+
+                        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/newui_darktext"
+                                  android:paddingTop="@dimen/margins_10"
+                                  android:paddingBottom="@dimen/margins_10" android:layout_width="fill_parent"
+                                  android:layout_height="wrap_content" android:text="@string/update_version"
+                                  android:layout_toLeftOf="@id/fragment_my_version_right_image"
+                                  android:layout_toRightOf="@id/fragment_my_version_left_image"
+                                  android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout android:id="@+id/fragment_my_about_layout"
+                                    android:background="@drawable/selector_corner_frame_bottom"
+                                    android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+                        <ImageView android:id="@+id/fragment_my_about_left_image" android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margins_5"
+                                   android:layout_marginRight="@dimen/margins_5"
+                                   android:src="@drawable/fragment_my_personal" android:layout_alignParentLeft="true"
+                                   android:layout_centerVertical="true" android:contentDescription="@null"/>
+
+                        <ImageView android:id="@+id/fragment_my_about_right_image" android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginRight="@dimen/margins_5" android:src="@drawable/right_arrow"
+                                   android:layout_alignParentRight="true" android:layout_centerVertical="true"
+                                   android:contentDescription="@null"/>
+
+                        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/newui_darktext"
+                                  android:paddingTop="@dimen/margins_10"
+                                  android:paddingBottom="@dimen/margins_10" android:layout_width="fill_parent"
+                                  android:layout_height="wrap_content" android:text="@string/about"
+                                  android:layout_toLeftOf="@id/fragment_my_about_right_image"
+                                  android:layout_toRightOf="@id/fragment_my_about_left_image"
+                                  android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <Button android:textSize="@dimen/small_text_size" android:textColor="@color/white"
+                    android:id="@+id/fragment_my_signout_button" android:background="@drawable/patient_del_bg"
+                    android:padding="@dimen/margins_10" android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="@dimen/margins_10"
+                    android:text="@string/user_logout"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

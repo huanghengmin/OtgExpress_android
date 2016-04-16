@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_otgexpress" default="compile.module.otgexpress">
+  <dirname property="module.otgexpress.basedir" file="${ant.file.module_otgexpress}"/>
+  
+  <property name="module.jdk.home.otgexpress" value="${jdk.home.android_api_14_platform}"/>
+  <property name="module.jdk.bin.otgexpress" value="${jdk.bin.android_api_14_platform}"/>
+  <property name="module.jdk.classpath.otgexpress" value="jdk.classpath.android_api_14_platform"/>
+  
+  <property name="compiler.args.otgexpress" value="-encoding UTF-8 -source 1.7 ${compiler.args}"/>
+  
+  <property name="otgexpress.output.dir" value="${module.otgexpress.basedir}/bin/classes"/>
+  <property name="otgexpress.testoutput.dir" value="${module.otgexpress.basedir}/bin/classes"/>
+  
+  <path id="otgexpress.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="otgexpress.module.production.classpath">
+    <path refid="${module.jdk.classpath.otgexpress}"/>
+    <path refid="library.android-support-v4.classpath"/>
+    <path refid="library.zxing.classpath"/>
+  </path>
+  
+  <path id="otgexpress.runtime.production.module.classpath">
+    <pathelement location="${otgexpress.output.dir}"/>
+    <path refid="library.android-support-v4.classpath"/>
+    <path refid="library.zxing.classpath"/>
+  </path>
+  
+  <path id="otgexpress.module.classpath">
+    <path refid="${module.jdk.classpath.otgexpress}"/>
+    <pathelement location="${otgexpress.output.dir}"/>
+    <path refid="library.android-support-v4.classpath"/>
+    <path refid="library.zxing.classpath"/>
+  </path>
+  
+  <path id="otgexpress.runtime.module.classpath">
+    <pathelement location="${otgexpress.output.dir}"/>
+    <path refid="library.android-support-v4.classpath"/>
+    <path refid="library.zxing.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.otgexpress">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.otgexpress">
+    <patternset refid="excluded.from.module.otgexpress"/>
+  </patternset>
+  
+  <path id="otgexpress.module.sourcepath">
+    <dirset dir="${module.otgexpress.basedir}">
+      <include name="src"/>
+      <include name="gen"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.otgexpress" depends="compile.module.otgexpress.production,compile.module.otgexpress.tests" description="Compile module OtgExpress"/>
+  
+  <target name="compile.module.otgexpress.production" depends="register.custom.compilers" description="Compile module OtgExpress; production classes">
+    <mkdir dir="${otgexpress.output.dir}"/>
+    <javac2 destdir="${otgexpress.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.otgexpress}/javac">
+      <compilerarg line="${compiler.args.otgexpress}"/>
+      <bootclasspath refid="otgexpress.module.bootclasspath"/>
+      <classpath refid="otgexpress.module.production.classpath"/>
+      <src refid="otgexpress.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.otgexpress"/>
+    </javac2>
+    
+    <copy todir="${otgexpress.output.dir}">
+      <fileset dir="${module.otgexpress.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.otgexpress.basedir}/gen">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.otgexpress.tests" depends="register.custom.compilers,compile.module.otgexpress.production" description="compile module OtgExpress; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.otgexpress" description="cleanup module">
+    <delete dir="${otgexpress.output.dir}"/>
+    <delete dir="${otgexpress.testoutput.dir}"/>
+  </target>
+</project>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg_home_user_login"
+                android:layout_width="fill_parent" android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout" android:padding="@dimen/margins_10"
+                  android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/margins_20" android:layout_marginRight="@dimen/margins_20"
+                  android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margins_40"
+                   android:src="@drawable/ico_home_logo" android:contentDescription="@string/app_name"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                      android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/ico_home_user_login_phone" android:contentDescription="@string/app_name"/>
+            <EditText android:textSize="@dimen/basic_text_size" android:textColor="@color/white"
+                      android:textColorHint="@color/white" android:id="@+id/phone" android:background="@null"
+                      android:paddingLeft="@dimen/margins_5" android:paddingTop="@dimen/margins_10"
+                      android:paddingBottom="@dimen/margins_10" android:layout_width="fill_parent"
+                      android:layout_height="wrap_content" android:hint="@string/please_account"
+                      android:singleLine="true" android:inputType="phone" android:imeOptions="actionNext"/>
+        </LinearLayout>
+
+        <ImageView android:background="@color/list_item" android:layout_width="fill_parent"
+                   android:layout_height="1.0px" android:layout_marginBottom="@dimen/margins_10"
+                   android:contentDescription="@string/app_name"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                      android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/ico_home_user_login_password"
+                       android:contentDescription="@string/app_name"/>
+            <EditText android:textSize="@dimen/basic_text_size" android:textColor="@color/white"
+                      android:textColorHint="@color/white" android:id="@+id/psw" android:background="@null"
+                      android:paddingLeft="@dimen/margins_5" android:paddingTop="@dimen/margins_10"
+                      android:paddingBottom="@dimen/margins_10" android:layout_width="fill_parent"
+                      android:layout_height="wrap_content" android:hint="@string/please_account_pwd"
+                      android:singleLine="true" android:inputType="textPassword" android:imeOptions="actionDone"/>
+        </LinearLayout>
+
+        <ImageView android:background="@color/list_item" android:layout_width="fill_parent"
+                   android:layout_height="1.0px" android:contentDescription="@string/app_name"/>
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                      android:layout_height="wrap_content">
+            <CheckBox android:textSize="@dimen/basic_text_size" android:textColor="@color/text_AE"
+                      android:id="@+id/rember" android:paddingTop="@dimen/margins_10"
+                      android:paddingBottom="@dimen/margins_10" android:layout_width="0.0dip"
+                      android:layout_height="wrap_content" android:button="@drawable/btn_home_login_check_selector"
+                      android:text="@string/remember_psw" android:layout_weight="1.0"
+                      android:onClick="onWelClick"/>
+
+            <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/text_AE"
+                      android:id="@+id/forget" android:background="@null" android:paddingTop="@dimen/margins_10"
+                      android:paddingBottom="@dimen/margins_10" android:layout_width="wrap_content"
+                      android:onClick="onWelClick"
+                      android:clickable="true"
+                      android:layout_height="wrap_content" android:hint="@string/forget_psw"/>
+
+        </LinearLayout>
+
+        <Button android:textSize="@dimen/title_text_size" android:textColor="@android:color/white"
+                android:id="@+id/login" android:background="@drawable/btn_button_greed_selector"
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margins_20" android:minHeight="@dimen/botton_height"
+                android:onClick="onWelClick"
+                android:text="@string/login"/>
+
+        <!--<Button android:textSize="@dimen/title_text_size" android:textColor="@android:color/white"
+                android:id="@+id/register" android:background="@drawable/btn_home_register"
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margins_10" android:layout_marginBottom="@dimen/margins_70"
+                android:minHeight="@dimen/botton_height" android:text="@string/register"
+                android:onClick="onWelClick"/>-->
+    </LinearLayout>
+
+</RelativeLayout>
